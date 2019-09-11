@@ -122,7 +122,12 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-
+   <!-- 异常 引入一个log4j的坐标 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.8.0-beta4</version>
+        </dependency>
   </dependencies>
 
   <build>
