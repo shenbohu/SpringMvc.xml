@@ -38,5 +38,10 @@
             <bean class="com.itheima.interceptor.MyInterceptor1"/>
         </mvc:interceptor>
     </mvc:interceptors>
+ <!-- 配置异常处理器-->
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!--   error 异常提示页面   跳转的页面  -->
+        <property name="defaultErrorView" value="error"></property>
 
+    </bean>
 </beans>
